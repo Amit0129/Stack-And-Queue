@@ -12,6 +12,7 @@
                 Console.WriteLine("Enter 1 to add element to Stack");
                 Console.WriteLine("Enter 2 to empty the Stack");
                 Console.WriteLine("Enter 3 to add element to Queue");
+                Console.WriteLine("Enter 4 to Dequeue element from Queue");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -30,6 +31,10 @@
                         Console.WriteLine("Enter a number");
                         int qValu = Convert.ToInt32(Console.ReadLine());
                         queueMethods.Add(qValu);
+                        queueMethods.Display();
+                        break;
+                    case 4:
+                        queueMethods.Dequeue();
                         queueMethods.Display();
                         break;
                     default:

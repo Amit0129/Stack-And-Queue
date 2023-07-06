@@ -26,6 +26,17 @@ namespace Stack_And_Queue
                 temp.next= node;
             }
         }
+        public void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Empty Linked List");
+            }
+            else
+            {
+                head = head.next;
+            }
+        }
         public void Display()
         {
             if (head == null)
