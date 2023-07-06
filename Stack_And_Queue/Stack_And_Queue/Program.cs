@@ -6,6 +6,7 @@
         {
             StackMethods<int> stackMethods= new StackMethods<int>();
             Console.WriteLine("Enter 1 to add element to Stack");
+            Console.WriteLine("Enter 2 to empty the Stack");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -27,6 +28,14 @@
                             check = false;
                         }
                     }
+                    stackMethods.Display();
+                    break;
+                case 2:
+                    stackMethods.Add(30);
+                    stackMethods.Add(56);
+                    stackMethods.Add(70);
+                    stackMethods.Display();
+                    stackMethods.EmptyStack();
                     stackMethods.Display();
                     break;
                 default:
